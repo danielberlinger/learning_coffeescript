@@ -1,0 +1,3 @@
+Compile command from root:
+
+coffee -o ./lib -cw src/*.coffee
