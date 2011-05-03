@@ -1,18 +1,12 @@
+A simple project that helped me get started with CoffeeScript.
+
 Compile command from root:
-Compiles any .coffee file in src dir to lib dir
+  Compiles any .coffee file in src dir to lib dir
+    coffee -o public/lib -cw src
 
-coffee -o lib -cw src
+If you want to run the Rack app (run from inside the project root)
+  rackup file_server.ru -p 1111
+  
+Or you can link into Pow, or run it with any Rack compatible app.
+  
 
-<script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"></script>
-
-
-The easiest way is to extend $.fn object
-
-Simple jQuery plugin can be written in CoffeeScript as follows:
-
-$.extend $.fn,
-
-  disable: ->
-    @each ->
-      e = $(this)
-      e.attr("disabled", "disabled") if e.is("button") or e.is("input")
