@@ -2,3 +2,17 @@ Compile command from root:
 Compiles any .coffee file in src dir to lib dir
 
 coffee -o lib -cw src
+
+<script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"></script>
+
+
+The easiest way is to extend $.fn object
+
+Simple jQuery plugin can be written in CoffeeScript as follows:
+
+$.extend $.fn,
+
+  disable: ->
+    @each ->
+      e = $(this)
+      e.attr("disabled", "disabled") if e.is("button") or e.is("input")
