@@ -1,3 +1,5 @@
+Busy Developer's Guide: CoffeeScript
+
 A simple project that helped me get started with CoffeeScript.
 
 Compile command from root:
@@ -7,6 +9,6 @@ Compile command from root:
 If you want to run the Rack app (run from inside the project root)
   rackup file_server.ru -p 1111
   
-Or you can link into Pow, or run it with any Rack compatible app.
+Or you can link into Pow, or run it with any Rack compatible server.
   
 
