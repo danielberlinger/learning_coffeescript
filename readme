@@ -1,6 +1,6 @@
 Busy Developer's Guide: CoffeeScript
 
-A simple project that helped me get started with a process for CoffeeScript.
+A simple project that helped me get started with a process for writing CoffeeScript.
 
 Compile command from root:
   Compiles any .coffee file in src dir to lib dir
